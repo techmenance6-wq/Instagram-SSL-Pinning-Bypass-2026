@@ -199,7 +199,7 @@ adb shell settings get global http_proxy
 | Instagram Version | Architecture          | Status                        |
 | ----------------- | --------------------- | ----------------------------- |
 | `435.0.0.37.76`   | `arm64-v8a`, `x86_64` | ✅ Available through Telegram  |
-| `370.1.0.43.96`   | `arm64-v8a`, `x86_64` | 🧪 Demo available in Releases |
+
 
 > 🔄 Newer Instagram versions may be patched upon request.
 
