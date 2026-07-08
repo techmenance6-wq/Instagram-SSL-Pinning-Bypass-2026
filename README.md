@@ -213,7 +213,7 @@ For the latest build or a custom Instagram version request:
 
 ### 📩 Telegram
 
-`https://t.me/YOUR_USERNAME`
+` https://t.me/devboy503` 
 
 > Replace `YOUR_USERNAME` with your real Telegram username.
 
