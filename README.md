@@ -4,25 +4,25 @@ A pre-patched Instagram APK with SSL certificate pinning disabled for authorized
 
 Inspect supported HTTPS traffic using tools such as Burp Suite, mitmproxy, Reqable, and Proxypin.
 
-> ✅ **No root required**
-> ✅ **No Frida required**
-> ✅ **No Magisk required**
+> ✅ **No root required**  
+> ✅ **No Frida required**  
+> ✅ **No Magisk required**  
 > ✅ **SSL bypass integrated directly into the APK**
 
 ---
 
 ## ✨ Features
 
-* ✅ SSL certificate pinning disabled
-* ✅ User-installed CA certificates supported
-* ✅ No root access required
-* ✅ No Frida scripts required
-* ✅ No Magisk modules required
-* ✅ Works on physical Android devices
-* ✅ Works on popular Android emulators
-* ✅ Compatible with common MITM proxy tools
-* ✅ Supports `arm64-v8a` and `x86_64`
-* ✅ Easy proxy configuration
+- ✅ SSL certificate pinning disabled
+- ✅ User-installed CA certificates supported
+- ✅ No root access required
+- ✅ No Frida scripts required
+- ✅ No Magisk modules required
+- ✅ Works on physical Android devices
+- ✅ Works on popular Android emulators
+- ✅ Compatible with common MITM proxy tools
+- ✅ Supports `arm64-v8a` and `x86_64`
+- ✅ Easy proxy configuration
 
 ---
 
@@ -40,12 +40,12 @@ This prevents user-installed proxy certificates from being trusted.
 
 Instagram may use components such as:
 
-* `CertificatePinner`
-* `TrustManager`
-* Custom certificate verifiers
-* Native certificate validation
-* Hardcoded certificate checks
-* Public-key pinning
+- `CertificatePinner`
+- `TrustManager`
+- Custom certificate verifiers
+- Native certificate validation
+- Hardcoded certificate checks
+- Public-key pinning
 
 These protections may reject intercepted traffic even when the proxy CA certificate is installed.
 
@@ -53,11 +53,11 @@ These protections may reject intercepted traffic even when the proxy CA certific
 
 The patched APK modifies the relevant certificate-validation behavior by:
 
-* ✅ Allowing user-installed CA certificates
-* ✅ Enabling pin overrides where applicable
-* ✅ Neutralizing supported certificate-pinning checks
-* ✅ Bypassing selected custom certificate verifiers
-* ✅ Allowing HTTPS traffic through configured debugging proxies
+- ✅ Allowing user-installed CA certificates
+- ✅ Enabling pin overrides where applicable
+- ✅ Neutralizing supported certificate-pinning checks
+- ✅ Bypassing selected custom certificate verifiers
+- ✅ Allowing HTTPS traffic through configured debugging proxies
 
 When the device and proxy are configured correctly, supported HTTPS requests can be viewed through your proxy tool.
 
@@ -67,20 +67,20 @@ When the device and proxy are configured correctly, supported HTTPS requests can
 
 Depending on the Instagram version, device, endpoint, and configuration, you may be able to inspect:
 
-* 🌐 REST API requests and responses
-* 🧩 GraphQL queries
-* 📰 Feed requests
-* 🎞️ Stories requests
-* 🔎 Search requests
-* 💬 Direct-message requests
-* 🖼️ Media and CDN URLs
-* 🔐 Authentication flows
-* 🍪 Session-related requests
-* 📊 Analytics events
-* 🧭 Tracking events
-* ⚠️ Application error responses
-* ⚙️ Configuration requests
-* 🎯 Content recommendation requests
+- 🌐 REST API requests and responses
+- 🧩 GraphQL queries
+- 📰 Feed requests
+- 🎞️ Stories requests
+- 🔎 Search requests
+- 💬 Direct-message requests
+- 🖼️ Media and CDN URLs
+- 🔐 Authentication flows
+- 🍪 Session-related requests
+- 📊 Analytics events
+- 🧭 Tracking events
+- ⚠️ Application error responses
+- ⚙️ Configuration requests
+- 🎯 Content recommendation requests
 
 > ⚠️ Some traffic may still use additional native protections, encryption, compression, binary formats, or custom transport mechanisms.
 
@@ -148,10 +148,10 @@ mitmproxy --listen-host 0.0.0.0 --listen-port 8080
 
 ### Supported Emulator Options
 
-* Android Studio Emulator
-* NoxPlayer
-* LDPlayer
-* BlueStacks
+- Android Studio Emulator
+- NoxPlayer
+- LDPlayer
+- BlueStacks
 
 ---
 
@@ -185,21 +185,20 @@ adb shell settings get global http_proxy
 
 ## 🧰 Compatible Proxy Tools
 
-| Tool       | Type                             | Status      |
-| ---------- | -------------------------------- | ----------- |
-| Burp Suite | Desktop security-testing proxy   | ✅ Supported |
-| mitmproxy  | Open-source CLI and Web UI       | ✅ Supported |
-| Reqable    | Modern traffic inspection tool   | ✅ Supported |
-| Proxypin   | Lightweight traffic-capture tool | ✅ Supported |
+| Tool | Type | Status |
+|---|---|---|
+| Burp Suite | Desktop security-testing proxy | ✅ Supported |
+| mitmproxy | Open-source CLI and Web UI | ✅ Supported |
+| Reqable | Modern traffic inspection tool | ✅ Supported |
+| Proxypin | Lightweight traffic-capture tool | ✅ Supported |
 
 ---
 
 ## 📋 Supported Builds
 
-| Instagram Version | Architecture          | Status                        |
-| ----------------- | --------------------- | ----------------------------- |
-| `435.0.0.37.76`   | `arm64-v8a`, `x86_64` | ✅ Available through Telegram  |
-
+| Instagram Version | Architecture | Status |
+|---|---|---|
+| `435.0.0.37.76` | `arm64-v8a`, `x86_64` | ✅ Available through Telegram |
 
 > 🔄 Newer Instagram versions may be patched upon request.
 
@@ -207,15 +206,9 @@ adb shell settings get global http_proxy
 
 ## ⬇️ Download
 
-Demo builds may be published in the repository's **Releases** section.
-
 For the latest build or a custom Instagram version request:
 
-### 📩 Telegram
-
-` https://t.me/devboy503` 
-
-> Replace `YOUR_USERNAME` with your real Telegram username.
+[![Telegram](https://img.shields.io/badge/Telegram-Contact%20Me-2CA5E0?logo=telegram&logoColor=white)](https://t.me/devboy503)
 
 ---
 
@@ -223,15 +216,15 @@ For the latest build or a custom Instagram version request:
 
 Before launching Instagram, confirm the following:
 
-* [ ] The patched APK is installed
-* [ ] The phone and computer are on the same network
-* [ ] The correct IPv4 address is being used
-* [ ] The proxy is listening on port `8080`
-* [ ] The firewall allows incoming connections
-* [ ] The proxy CA certificate is installed
-* [ ] The Android proxy is configured correctly
-* [ ] No VPN is bypassing the Wi-Fi proxy
-* [ ] Instagram is not the official unpatched build
+- [ ] The patched APK is installed
+- [ ] The phone and computer are on the same network
+- [ ] The correct IPv4 address is being used
+- [ ] The proxy is listening on port `8080`
+- [ ] The firewall allows incoming connections
+- [ ] The proxy CA certificate is installed
+- [ ] The Android proxy is configured correctly
+- [ ] No VPN is bypassing the Wi-Fi proxy
+- [ ] Instagram is not the official unpatched build
 
 ---
 
@@ -241,14 +234,14 @@ Before launching Instagram, confirm the following:
 
 Check that:
 
-* ✅ The phone and computer are connected to the same network
-* ✅ The proxy IP address is correct
-* ✅ The proxy is listening on `0.0.0.0`
-* ✅ Port `8080` is not blocked
-* ✅ The CA certificate is installed
-* ✅ Instagram is using the patched APK
-* ✅ A VPN is not bypassing the proxy
-* ✅ Private DNS is not interfering with the connection
+- ✅ The phone and computer are connected to the same network
+- ✅ The proxy IP address is correct
+- ✅ The proxy is listening on `0.0.0.0`
+- ✅ Port `8080` is not blocked
+- ✅ The CA certificate is installed
+- ✅ Instagram is using the patched APK
+- ✅ A VPN is not bypassing the proxy
+- ✅ Private DNS is not interfering with the connection
 
 On Windows, check your network information using:
 
@@ -260,10 +253,10 @@ Use the IPv4 address of your active Wi-Fi or Ethernet adapter.
 
 Avoid using:
 
-* ❌ `127.0.0.1`
-* ❌ WSL virtual adapter addresses
-* ❌ Hyper-V virtual adapter addresses
-* ❌ Inactive Ethernet adapter addresses
+- ❌ `127.0.0.1`
+- ❌ WSL virtual adapter addresses
+- ❌ Hyper-V virtual adapter addresses
+- ❌ Inactive Ethernet adapter addresses
 
 ---
 
@@ -321,46 +314,46 @@ adb install instagram-patched.apk
 
 Possible causes include:
 
-* Additional native certificate validation
-* Unsupported Instagram version
-* Incorrect proxy certificate
-* QUIC or HTTP/3 traffic
-* Binary or encrypted request payloads
-* Device integrity checks
-* Emulator detection
-* App signature verification
-* Server-side security restrictions
+- Additional native certificate validation
+- Unsupported Instagram version
+- Incorrect proxy certificate
+- QUIC or HTTP/3 traffic
+- Binary or encrypted request payloads
+- Device integrity checks
+- Emulator detection
+- App signature verification
+- Server-side security restrictions
 
----
 <!--
 ## 🚀 Related Projects
 
-* 🎵 TikTok SSL Pinning Bypass
-* 👻 Snapchat SSL Pinning Bypass
-* 🧵 Threads SSL Pinning Bypass
-* 📘 Facebook SSL Pinning Bypass
-* 💬 Messenger SSL Pinning Bypass
+- 🎵 TikTok SSL Pinning Bypass
+- 👻 Snapchat SSL Pinning Bypass
+- 🧵 Threads SSL Pinning Bypass
+- 📘 Facebook SSL Pinning Bypass
+- 💬 Messenger SSL Pinning Bypass
 -->
+
 ---
 
 ## 📜 Legal Disclaimer
 
 This repository is intended only for:
 
-* ✅ Authorized security testing
-* ✅ Application debugging
-* ✅ Educational research
-* ✅ Interoperability testing
-* ✅ Testing devices and applications that you own
-* ✅ Testing systems for which you have explicit permission
+- ✅ Authorized security testing
+- ✅ Application debugging
+- ✅ Educational research
+- ✅ Interoperability testing
+- ✅ Testing devices and applications that you own
+- ✅ Testing systems for which you have explicit permission
 
 Do not use this project to access:
 
-* ❌ Private communications
-* ❌ Authentication credentials
-* ❌ Accounts you do not own
-* ❌ Devices you do not control
-* ❌ Network traffic without authorization
+- ❌ Private communications
+- ❌ Authentication credentials
+- ❌ Accounts you do not own
+- ❌ Devices you do not control
+- ❌ Network traffic without authorization
 
 You are responsible for complying with all applicable laws, privacy requirements, security-testing agreements, and platform terms.
 
@@ -380,8 +373,8 @@ For build requests, supported-version questions, custom patches, or technical as
 
 If this project helped you:
 
-* ⭐ Star the repository
-* 🍴 Fork the project
-* 🐛 Report issues
-* 💡 Suggest improvements
-* 📢 Share it with other authorized security researchers
+- ⭐ Star the repository
+- 🍴 Fork the project
+- 🐛 Report issues
+- 💡 Suggest improvements
+- 📢 Share it with other authorized security researchers
