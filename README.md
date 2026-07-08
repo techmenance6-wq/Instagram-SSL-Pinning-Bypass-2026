@@ -374,7 +374,7 @@ For build requests, supported-version questions, custom patches, or technical as
 
 ### Telegram
 
-`https://t.me/YOUR_USERNAME`
+`https://t.me/devboy503`
 
 ---
 
