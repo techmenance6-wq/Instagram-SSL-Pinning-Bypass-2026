@@ -363,7 +363,7 @@ The repository owner is not responsible for misuse of the software, APK files, d
 
 ## 📬 Contact
 
-For build requests, supported-version questions, custom patches, or technical assistance:
+For build requests, supported-version questions, custom patches, or technical assistance:.
 
 [![Telegram](https://img.shields.io/badge/Telegram-Contact%20Me-2CA5E0?logo=telegram&logoColor=white)](https://t.me/devboy503)
 
