@@ -21,7 +21,7 @@ Inspect supported HTTPS traffic using tools such as Burp Suite, mitmproxy, Reqab
 - ✅ Works on physical Android devices
 - ✅ Works on popular Android emulators
 - ✅ Compatible with common MITM proxy tools
-- ✅ Supports `arm64-v8a` and `x86_64`
+- ✅ Support `arm64-v8a` and `x86_64`
 - ✅ Easy proxy configuration
 
 ---
